@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 150px auto;
+}
+
+#header {
+    grid-column: 2 / 3;
+}
+
+#sidebar {
+    background-color: rgb(69, 144, 206);
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+#main {
+    background-color: rgb(227, 232, 239);
+}
