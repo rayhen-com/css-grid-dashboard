@@ -35,6 +35,11 @@
     width: 20px;
 }
 
+h4 {
+    font-family: lato-bold, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
 /* ------------------------------------------------ */
 /* HEADER */
 #header {
@@ -155,4 +160,60 @@ input[type="search"] {
 /* MAIN */
 #main {
     background-color: rgb(227, 232, 239);
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:  
+    "projects announcements"
+    "projects trending";
+    gap: 25px;
+}
+
+.projects-container,
+.announcements-container,
+.trending-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+}
+
+.projects-container {
+    /* background-color: burlywood; */
+    grid-area: projects;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr; */
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 200px;
+    grid-auto-rows: 200px;
+    gap: 25px;
+}
+
+.projects-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    height: 200px;
+    padding: 30px 20px;
+    box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
+    -webkit-box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
+    -moz-box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
+}
+
+
+
+
+
+.announcements-container {
+    background-color: yellowgreen;
+    grid-area: announcements;
+}
+
+.trending-container {
+    background-color: blueviolet;
+    grid-area: trending;
+
 }
