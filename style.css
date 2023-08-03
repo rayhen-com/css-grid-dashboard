@@ -178,11 +178,7 @@ input[type="search"] {
 }
 
 .projects-container {
-    /* background-color: burlywood; */
     grid-area: projects;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr; */
 }
 
 .projects-wrapper {
@@ -194,22 +190,27 @@ input[type="search"] {
 }
 
 .projects-card {
-    background-color: rgb(255, 255, 255);
-    border-radius: 6px;
     height: 200px;
     padding: 30px 20px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
     box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
     -webkit-box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
     -moz-box-shadow: 2px 2px 11px 0px rgba(115,115,115,0.44);
 }
 
-
-
-
-
 .announcements-container {
-    background-color: yellowgreen;
     grid-area: announcements;
+}
+
+.announcements-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    padding: 30px 20px;
+    gap: 25px;
 }
 
 .trending-container {
